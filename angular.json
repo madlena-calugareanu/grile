@@ -21,7 +21,7 @@
               "@grapecity/gcpdfviewer"
               ],
             "outputPath": "dist/grile-project",
-            "index": "src/index.html",
+            "index": "index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
