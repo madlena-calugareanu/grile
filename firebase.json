@@ -1,6 +1,7 @@
 {
   "hosting": {
-    "public": "dist",
+    "site": "feb26",
+    "public": "dist/grile-project",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -13,4 +14,5 @@
       }
     ]
   }
+  
 }

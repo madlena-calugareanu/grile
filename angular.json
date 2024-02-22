@@ -17,9 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "allowedCommonJsDependencies": [
-              "@grapecity/gcpdfviewer"
-              ],
+            
             "outputPath": "dist/grile-project",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -28,7 +26,12 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                    "glob": "**/*",
+                    "input": "./node_modules/pspdfkit/dist/pspdfkit-lib/",
+                    "output": "./assets/pspdfkit-lib/"
+                   }
             ],
             "styles": [
               "src/styles.scss"

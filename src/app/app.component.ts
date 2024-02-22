@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import GcPdfViewer from '@grapecity/gcpdfviewer';
+import PSPDFKit from 'pspdfkit';
 
 @Component({
   selector: 'app-root',
@@ -9,13 +9,21 @@ import GcPdfViewer from '@grapecity/gcpdfviewer';
 export class AppComponent {
   title = 'grile-project';
 
- 
-  ngAfterViewInit() {
-    const viewer = new GcPdfViewer("#viewer", {
-      workerSrc: "//node_modules/@grapecity/gcpdfviewer/gcpdfviewer.worker.js",
-      restoreViewStateOnLoad: false
-    });
-    viewer.addDefaultPanels();
-    viewer.open("assets/intrebari.pdf");
+  ngOnInit(){
+    let xhr = new XMLHttpRequest();
+// load `document` from `cache`
+xhr.open('GET', '../assets/exx.pdf', true);
+xhr.responseType = 'blob';
+xhr.onload = function (e) {
+  if (this.status === 200) {
+    // `blob` response
+    var file = window.URL.createObjectURL(this.response);
+    document.querySelector('iframe').src = file;
   }
+};
+xhr.send();
+  }
+	
 }
+
+

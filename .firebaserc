@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "grile-4e718"
-  }
+    "default": "grile-ec460",
+    "production": "grile-ec460"
+  },
+  "targets": {},
+  "etags": {}
 }

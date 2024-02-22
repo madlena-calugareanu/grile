@@ -18,8 +18,10 @@
     "@angular/platform-browser": "^14.2.0",
     "@angular/platform-browser-dynamic": "^14.2.0",
     "@angular/router": "^14.2.0",
-    "@grapecity/gcpdfviewer": "^4.1.4",
+    "firebase": "^10.8.0",
+    "pspdfkit": "^2023.3.2",
     "rxjs": "~7.5.0",
+    "serve": "^14.2.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
