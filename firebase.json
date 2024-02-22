@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/grile-project",
+    "public": "dist",
     "ignore": [
       "firebase.json",
       "**/.*",
